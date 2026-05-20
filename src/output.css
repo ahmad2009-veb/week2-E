@@ -190,6 +190,12 @@
   .z-10 {
     z-index: 10;
   }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
   .mb-\[40px\] {
     margin-bottom: 40px;
   }
@@ -211,8 +217,14 @@
   .h-\[320px\] {
     height: 320px;
   }
+  .h-\[auto\] {
+    height: auto;
+  }
   .w-\[100px\] {
     width: 100px;
+  }
+  .w-\[280px\] {
+    width: 280px;
   }
   .w-\[300px\] {
     width: 300px;
@@ -226,11 +238,17 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .resize {
     resize: both;
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
   }
   .items-center {
     align-items: center;
@@ -249,6 +267,9 @@
   }
   .gap-\[40px\] {
     gap: 40px;
+  }
+  .gap-\[120px\] {
+    gap: 120px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -291,8 +312,20 @@
   .py-\[80px\] {
     padding-block: 80px;
   }
+  .py-\[100px\] {
+    padding-block: 100px;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[36px\] {
     font-size: 36px;
@@ -300,6 +333,10 @@
   .leading-\[1\.2\] {
     --tw-leading: 1.2;
     line-height: 1.2;
+  }
+  .leading-\[1\.6\] {
+    --tw-leading: 1.6;
+    line-height: 1.6;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -311,6 +348,9 @@
   }
   .text-\[\#1A1A1A\] {
     color: #1A1A1A;
+  }
+  .text-\[\#4A4A4A\] {
+    color: #4A4A4A;
   }
   .text-\[\#4D8067\] {
     color: #4D8067;
@@ -379,6 +419,11 @@
       height: 450px;
     }
   }
+  .sm\:w-\[350px\] {
+    @media (width >= 40rem) {
+      width: 350px;
+    }
+  }
   .sm\:w-\[450px\] {
     @media (width >= 40rem) {
       width: 450px;
@@ -394,6 +439,21 @@
       flex-direction: row;
     }
   }
+  .sm\:text-\[16px\] {
+    @media (width >= 40rem) {
+      font-size: 16px;
+    }
+  }
+  .sm\:text-\[36px\] {
+    @media (width >= 40rem) {
+      font-size: 36px;
+    }
+  }
+  .md\:w-\[400px\] {
+    @media (width >= 48rem) {
+      width: 400px;
+    }
+  }
   .md\:w-\[500px\] {
     @media (width >= 48rem) {
       width: 500px;
@@ -402,6 +462,11 @@
   .md\:w-\[550px\] {
     @media (width >= 48rem) {
       width: 550px;
+    }
+  }
+  .md\:w-\[650px\] {
+    @media (width >= 48rem) {
+      width: 650px;
     }
   }
   .md\:flex-row {
@@ -424,6 +489,26 @@
       padding-inline: 120px;
     }
   }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -503,6 +588,11 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
